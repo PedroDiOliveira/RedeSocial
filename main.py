@@ -18,63 +18,12 @@ def interface_conta():
     5-)Deslogar
     ''')
 
-listaUsers = []
-matriz = []
-index = -1
-class Usuario:
-    def __init__(self, nome):
-        self.nome = nome
-        self.index = index + 1
-
-def adicionar():
-    nome = input("Digite o nome do usuario: ")
-    user = Usuario(nome)
-    listaUsers.append(user)
-    matriz.append([user][0])
-
-
-adicionar()
-
-def seguir_usuario(matriz):
-    nome = input("Digite o nome do usuario que deseja seguir: ")
-
-    for i in len(listaUsers):
-      if listaUsers[i] == nome :
-        index = listaUsers[i].
-
-    for i in len(matriz):
-        for j in len(matriz):
-            if matriz[i][j] 
-
-
-# Criando uma matriz 3x3 inicialmente preenchida com zeros
-matriz = [[0, 0, 0],
-          [0, 0, 0],
-          [0, 0, 0]]
-
-# Acessando e modificando elementos da matriz
-matriz[0][0] = 1
-matriz[1][1] = 2
-matriz[2][2] = 3
-
-# Imprimindo a matriz
-for linha in matriz:
-    print(linha)
-
-
-    matriz[lista1]
-
-
-
-
-
 lista = []
-indice = -1
+indice = 0
 
 class Usuario:
     def __init__(self, nome):
         self.nome = nome
-        self.indice = indice + 1
 
 def novo():
     nome = input("Digite o nome do usuario: ")
@@ -83,35 +32,33 @@ def novo():
     lista.append(user)
     matriz = [[ 0 * j * i for j in range(len(lista))] for i in range(len(lista))]
     print(matriz)
+    return matriz
 
 
 ##########################################################################
 
-novo()
-novo()
+matriz = novo()
+matriz = novo()
+matriz = novo()
 
+
+
+x = 0
 Login = input("Digite o usuario que deseja se logar: ")
 for i in lista:
     if i.nome == Login:
-        atual = i.indice
+       atual = x
+    x += 1
 
+x = 0
 nome = input("Digite o nome do usuario que deseja seguir: ")
-
 for i in lista:
     if i.nome == nome:
-        Seguir = i.indice
+        Seguir = x
+    x += 1
+        
 
 matriz[atual][Seguir] = 1
 
-print
-
-
-
-
-# nome = input("Digite o nome do usuario que deseja seguir: ")
-
-# for i in range(len(lista)):
-#     if lista[i].nome == nome :
-#         print(lista[i].nome)
-
-
+for linha in matriz:
+    print(linha)
